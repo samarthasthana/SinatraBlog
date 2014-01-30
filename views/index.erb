@@ -1,0 +1,14 @@
+<h1>All Posts</h1></br>
+<% if @test.nil? %>
+	<p>No Posts<\p>
+<% else %>
+<% @test.each do |t| %>
+<p>Name =<%= t.name %></p>
+<p>Topic =<%= t.topic %></p>
+<p>Content =<%= t.content %></p></br>
+<% end %>
+<% end %>
+
+
+
+ 
