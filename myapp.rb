@@ -39,6 +39,11 @@ get '/edit/?' do
 erb :edit
 end
 
+post '/edit/?' do
+
+erb :index
+end
+
 get '/delete/?' do
 erb :delete
 end

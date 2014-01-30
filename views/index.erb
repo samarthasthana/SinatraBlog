@@ -1,4 +1,5 @@
 <h1>All Posts</h1></br>
+<a href="/add">Add Post</a>
 <% if @test.nil? %>
 	<p>No Posts </p>
 <% else %>
@@ -6,7 +7,9 @@
 <div>
 <p>Name =<%= t.name %></p>
 <p>Topic =<%= t.topic %></p>
-<p>Content =<%= t.content %></p></br>
+<p>Content =<%= t.content %></p>
+<a href="/edit">Edit Post</a>
+<a href="/delete">Delete Post</a></br>
 </div>
 <% end %>
 <% end %>
